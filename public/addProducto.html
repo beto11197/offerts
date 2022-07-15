@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="back-cyber">
+    <div class="panel">
+      <h1 id="titlead"></h1>
+
+      <div class="row">
+        <form class="col s12" id="sendForm" method="post">
+          <div class="row">
+            <div class="input-field col s12 m6">
+              <i class="material-icons prefix">language</i>
+              <input id="nombre" type="text" name="nombre" class="validate" />
+              <label for="nombre">Nombre</label>
+            </div>
+            <div class="input-field col s12 m6">
+              <i class="material-icons prefix">attach_money</i>
+              <input id="precio" type="number" name="precio" class="validate" />
+              <label for="precio">Precio</label>
+            </div>
+
+            <div class="input-field col s12 m6">
+              <i class="material-icons prefix">local_grocery_store</i>
+              <input id="lugar" type="text" name="lugar" class="validate" />
+              <label for="lugar">Tienda en línea</label>
+            </div>
+
+            <div class="input-field col s12 m6">
+                <i class="material-icons prefix">insert_link</i>
+                <input id="url" type="text" name="url" class="validate" />
+                <label for="url">URL</label>
+            </div>
+
+            <button class="btn waves-effect waves-light btnsend" type="submit" id="save" name="action">Envíar
+                <i class="material-icons right">send</i>
+            </button>
+            
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/controlador.js"></script>
+  </body>
+</html>
